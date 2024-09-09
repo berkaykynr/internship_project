@@ -1,0 +1,22 @@
+@import url('primeicons/primeicons.css');
+@import 'primeflex/primeflex.scss';
+@font-face {
+  font-family: 'EudoxusSans';
+  src: url('../public/fonts/EudoxusSans/EudoxusSansGX.woff2') format('woff2'),
+       url('../public/fonts/EudoxusSans/EudoxusSansGX.woff') format('woff'),
+       url('../public/fonts/EudoxusSans/EudoxusSansGX.ttf') format('truetype');
+
+}
+
+
+body {
+  margin: 0;
+  font-family:"EudoxusSans";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

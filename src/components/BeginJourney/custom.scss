@@ -1,0 +1,10 @@
+.button_get_started{
+    background: linear-gradient(90deg,#392D69,#B57BEE);
+    &:hover{
+        background: linear-gradient(90deg,#B57BEE,#392D69);
+
+    }
+}
+.background_black{
+    background-color: black !important;
+}

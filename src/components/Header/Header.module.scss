@@ -1,0 +1,111 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    .logo_container{
+        display: flex;
+        width: 25%;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin-left: 5px;
+        .brand_name{
+            font-size: 24px;
+            font-weight: 900;
+            font-family: "EudoxusSans";
+        }
+        .logo_image{
+            display: flex;
+            max-width: 1em;
+            max-height: 1em;
+            object-fit: contain;
+        }
+    }
+    .menu_container{
+        display: flex;
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+        .menu_bar{
+            background-color: white;
+            border:none;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+    
+    }
+    .buttons_container{
+        display: flex;
+        width: 25%;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+        .login_button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45%;
+            padding: 0.7rem;
+            border: 1px solid black;
+            cursor: pointer;
+            border-radius: 4px;
+            &:hover {
+                transform: scale(0.9);
+            }
+            span{
+                font-family: "EudoxusSans";
+                font-weight: bold;
+                font-size: 14px;
+            
+            }
+        }
+        .register_button{
+            display: flex;
+            width: 45%;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: black;
+            &:hover {
+                transform: scale(0.9);
+            }
+
+            span{
+                color: white;
+                font-family: "EudoxusSans";
+                font-weight: bold;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 690px) {
+
+   .main{
+    .logo_container{
+        .brand_name{
+            font-size: 14px;
+        }
+    }
+    .buttons_container{
+        .login_button{
+            span{
+                font-size: 9px;
+            }
+        }
+        .register_button{
+            span{
+                font-size: 9px;
+            }
+        }
+    }
+   }
+ }
